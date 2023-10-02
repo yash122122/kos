@@ -8,8 +8,8 @@ import time  # Import the time module for waiting
 
 init()
 
-mainu = ""
-mainup = ""
+mainu = "k"
+mainup = "k"
 
 def md5_hash(text):
     return hashlib.md5(text.encode()).hexdigest()
@@ -31,8 +31,8 @@ def authenticate():
     username = input("Enter your username: ")
     password = getpass.getpass("Enter your password: ")
 
-    checku = md5_hash(username)
-    checkp = md5_hash(password)
+    checku = username
+    checkp = password
 
     if checku == mainu and checkp == mainup:
         print("Authentication successful.")
