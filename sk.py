@@ -8,8 +8,8 @@ import time  # Import the time module for waiting
 
 init()
 
-mainu = "a3c51a6c750d9ffe04926da5e6bc491f"
-mainup = "fd12cc0b06e6ead008d35ae16ba5d7c2"
+mainu = ""
+mainup = ""
 
 def md5_hash(text):
     return hashlib.md5(text.encode()).hexdigest()
